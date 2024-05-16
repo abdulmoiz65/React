@@ -1,13 +1,17 @@
 import React from "react";
+import "../project.css";
 
-function header() {
+function Header() {
     return(
-        <>
-        <h1>this is my web header</h1>
-        <p>this is the content of my web</p>
-        </>
+       <div className="myheader">
+            <ul>
+                <li>Home</li>
+                <li>Counter</li>
+                <li>About</li>
+            </ul>
+       </div>
     );
     
 }
 
-export default header;
+export default Header;

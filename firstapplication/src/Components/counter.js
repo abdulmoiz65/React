@@ -1,15 +1,35 @@
-import React from "react";
+// import React from "react";
+import React, { useState } from "react";
 
-function counter() {
+import "../project.css";
+
+function Counter() {
+
+let count =  0 ;
+const [currentState , UpdatedState] = useState(count);    
+const clickit = () =>{
+ 
+     UpdatedState(currentState + 1) ;
+
+}
+
+const reset = () =>{
+   UpdatedState(0);
+}
 
         return(
-            <>
-            <h1>this is the counter of my web</h1>
-            <p>press the start button for the counter </p>
-            </>
+        <>
+        <div className="count">
         
+            <h3>This is my counter</h3>
+                <button onClick={clickit}>  {currentState} </button>
+                <button className="reset" onClick={reset} > Reset </button>
+                
+            </div>
+        </>
+            
         );
     
 }
 
-export default counter;
+export default Counter;

@@ -1,19 +1,21 @@
-import React,{useState,useEffect} from "react";
+import React from "react";
 import "./App.css";
 
-import header from "./Components/header";
-import counter from "./Components/counter";
+import "./project.css";
+import Header from "./Components/header";
+import Counter from "./Components/counter";
+
 
 function App(){
 
    return(
-    <>
-    <header/>
-    <counter/>
+    <>   
+    <div className="Main">
+    <Header />
+    <Counter />
+    </div>
     </>
 
    );
-
 }
-
 export default App;
