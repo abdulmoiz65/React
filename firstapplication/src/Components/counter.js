@@ -1,12 +1,18 @@
 // import React from "react";
-import React, { useState } from "react";
+import React ,{useEffect , useState} from "react";
 
 import "../project.css";
 
 function Counter() {
-
+ 
 let count =  0 ;
+
 const [currentState , UpdatedState] = useState(count);    
+useEffect(()=>{
+    if(currentState!==0){
+    window.alert(" you are clicking");}
+});
+
 const clickit = () =>{
  
      UpdatedState(currentState + 1) ;
