@@ -6,6 +6,7 @@ import Home from "./Components/home";
 import About from "./Components/About";
 import Header from "./Components/header";
 import Counter from "./Components/counter";
+import Error from "./Components/404";
 
 function App() {
    
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Home" element = { <><Header /><Home /></>} />   
         <Route path="/about" element = {<About />} />   
         <Route path="/counter" element = {<Counter />} />   
+        <Route path="*" element={<Error />} />
         
         </Routes>
         </>
