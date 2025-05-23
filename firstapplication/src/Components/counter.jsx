@@ -16,10 +16,10 @@ function moveTo() {
 let count =  0 ;
 
 const [currentState , UpdatedState] = useState(count);    
-useEffect(()=>{
-    if(currentState!==0){
-    window.alert(" you are clicking");}
-});
+// useEffect(()=>{
+//     if(currentState!==0){
+//     window.alert(" you are clicking");}
+// });
 
 const clickit = () =>{
  
